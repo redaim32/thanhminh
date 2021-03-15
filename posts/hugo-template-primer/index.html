@@ -25,11 +25,11 @@ This document is a brief primer on using go templates."/>
 <meta property="og:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.example.com/posts/hugo-template-primer/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://redaim32.github.io/thanhminh/posts/hugo-template-primer/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2014-04-02T00:00:00&#43;00:00" />
 <meta property="article:modified_time" content="2014-04-02T00:00:00&#43;00:00" />
-<meta property="og:see_also" content="http://www.example.com/posts/hugoisforlovers/" /><meta property="og:see_also" content="http://www.example.com/posts/migrate-from-jekyll/" />
-<meta property="og:see_also" content="http://www.example.com/posts/twemoji-support/" /><meta property="og:see_also" content="http://www.example.com/posts/render-latex-using-katex/" /><meta property="og:see_also" content="http://www.example.com/posts/hugo-coder-wiki/" /><meta property="og:see_also" content="http://www.example.com/posts/theme-demo/" /><meta property="og:see_also" content="http://www.example.com/posts/creating-a-new-theme/" />
+<meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/hugoisforlovers/" /><meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/migrate-from-jekyll/" />
+<meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/twemoji-support/" /><meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/render-latex-using-katex/" /><meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/hugo-coder-wiki/" /><meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/theme-demo/" /><meta property="og:see_also" content="https://redaim32.github.io/thanhminh/posts/creating-a-new-theme/" />
 
 
 
@@ -38,17 +38,17 @@ This document is a brief primer on using go templates." />
 </title>
 
     
-      <link rel="canonical" href="http://www.example.com/posts/hugo-template-primer/">
+      <link rel="canonical" href="https://redaim32.github.io/thanhminh/posts/hugo-template-primer/">
     
 
     
     
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" integrity="sha256-hEIt6X6xzye8ubyk8/uxjz68cRZHsJxoKS9fQ8idUGQ=" crossorigin>
+    <link rel="preload" href="/thanhminh/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" integrity="sha256-hEIt6X6xzye8ubyk8/uxjz68cRZHsJxoKS9fQ8idUGQ=" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="/css/coder.min.abe8b6775d85a01169c10329309df501aa8a008ab354002f7858f077cae76020.css" integrity="sha256-q&#43;i2d12FoBFpwQMpMJ31AaqKAIqzVAAveFjwd8rnYCA=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/thanhminh/css/coder.min.abe8b6775d85a01169c10329309df501aa8a008ab354002f7858f077cae76020.css" integrity="sha256-q&#43;i2d12FoBFpwQMpMJ31AaqKAIqzVAAveFjwd8rnYCA=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -57,7 +57,7 @@ This document is a brief primer on using go templates." />
       
         
         
-        <link rel="stylesheet" href="/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/thanhminh/css/coder-dark.min.89c82b6022b96f77aeb521b240daec4f87ea029d84d1c78b8acd0735b91b3c92.css" integrity="sha256-icgrYCK5b3eutSGyQNrsT4fqAp2E0ceLis0HNbkbPJI=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -65,11 +65,11 @@ This document is a brief primer on using go templates." />
 
     
 
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/thanhminh/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/thanhminh/images/favicon-16x16.png" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/thanhminh/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/thanhminh/images/apple-touch-icon.png">
 
     
       <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
@@ -97,7 +97,7 @@ This document is a brief primer on using go templates." />
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    <a class="navigation-title" href="/thanhminh">
       Thanh Minh
     </a>
     
@@ -109,19 +109,19 @@ This document is a brief primer on using go templates." />
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
+              <a class="navigation-link" href="/thanhminh/about/">About</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Blog</a>
+              <a class="navigation-link" href="/thanhminh/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/projects/">Projects</a>
+              <a class="navigation-link" href="/thanhminh/projects/">Projects</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/contact/">Contact me</a>
+              <a class="navigation-link" href="/thanhminh/contact/">Contact me</a>
             </li>
           
         
@@ -139,7 +139,7 @@ This document is a brief primer on using go templates." />
                 
               
               <li class="navigation-item">
-                <a href="http://www.example.com/vn/">Vietnamese</a>
+                <a href="https://redaim32.github.io/thanhminh/vn/">Vietnamese</a>
               </li>
             
           
@@ -157,7 +157,7 @@ This document is a brief primer on using go templates." />
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://www.example.com/posts/hugo-template-primer/">
+            <a class="title-link" href="https://redaim32.github.io/thanhminh/posts/hugo-template-primer/">
               (Hu)go Template Primer
             </a>
           </h1>
@@ -177,24 +177,24 @@ This document is a brief primer on using go templates." />
           </div>
           <div class="authors">
     <i class="fa fa-user" aria-hidden="true"></i>
-      <a href="/authors/jane-smith/">Jane Smith</a></div>
+      <a href="/thanhminh/authors/jane-smith/">Jane Smith</a></div>
           <div class="categories">
   <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/development/">Development</a>
+    <a href="/thanhminh/categories/development/">Development</a>
       <span class="separator">•</span>
-    <a href="/categories/golang/">golang</a></div>
+    <a href="/thanhminh/categories/golang/">golang</a></div>
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="/tags/go/">go</a>
+    <a href="/thanhminh/tags/go/">go</a>
       <span class="separator">•</span>
-    <a href="/tags/golang/">golang</a>
+    <a href="/thanhminh/tags/golang/">golang</a>
       <span class="separator">•</span>
-    <a href="/tags/templates/">templates</a>
+    <a href="/thanhminh/tags/templates/">templates</a>
       <span class="separator">•</span>
-    <a href="/tags/themes/">themes</a>
+    <a href="/thanhminh/tags/themes/">themes</a>
       <span class="separator">•</span>
-    <a href="/tags/development/">development</a></div>
+    <a href="/thanhminh/tags/development/">development</a></div>
 
         </div>
       </header>
@@ -525,13 +525,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
+              <a href="/thanhminh/posts/hugoisforlovers/">Getting Started with Hugo</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
+              <a href="/thanhminh/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
             </li>
           
         
@@ -554,13 +554,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/posts/twemoji-support/">Twemoji Support 🤩</a>
+              <a href="/thanhminh/posts/twemoji-support/">Twemoji Support 🤩</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/render-latex-using-katex/">Render LaTeX using KaTeX</a>
+              <a href="/thanhminh/posts/render-latex-using-katex/">Render LaTeX using KaTeX</a>
             </li>
           
         
@@ -572,13 +572,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/posts/theme-demo/">Theme Demo</a>
+              <a href="/thanhminh/posts/theme-demo/">Theme Demo</a>
             </li>
           
         
           
             <li>
-              <a href="/posts/creating-a-new-theme/">Creating a New Theme</a>
+              <a href="/thanhminh/posts/creating-a-new-theme/">Creating a New Theme</a>
             </li>
           
         
@@ -648,7 +648,7 @@ so, such as in this example:</p>
     
       
         
-        <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js" integrity="sha256-runIpGTrezU0xxEPfF4WnnA54v2ScQ4GJtRR1nJa8Tc="></script>
+        <script src="/thanhminh/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js" integrity="sha256-runIpGTrezU0xxEPfF4WnnA54v2ScQ4GJtRR1nJa8Tc="></script>
       
     
 

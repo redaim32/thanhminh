@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/vn/authors/</loc>
+    <loc>https://redaim32.github.io/thanhminh/vn/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/authors/"
+                href="https://redaim32.github.io/thanhminh/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vn"
-                href="http://www.example.com/vn/authors/"
+                href="https://redaim32.github.io/thanhminh/vn/authors/"
                 />
   </url><url>
-    <loc>http://www.example.com/vn/categories/</loc>
+    <loc>https://redaim32.github.io/thanhminh/vn/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/categories/"
+                href="https://redaim32.github.io/thanhminh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vn"
-                href="http://www.example.com/vn/categories/"
+                href="https://redaim32.github.io/thanhminh/vn/categories/"
                 />
   </url><url>
-    <loc>http://www.example.com/vn/series/</loc>
+    <loc>https://redaim32.github.io/thanhminh/vn/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/series/"
+                href="https://redaim32.github.io/thanhminh/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vn"
-                href="http://www.example.com/vn/series/"
+                href="https://redaim32.github.io/thanhminh/vn/series/"
                 />
   </url><url>
-    <loc>http://www.example.com/vn/tags/</loc>
+    <loc>https://redaim32.github.io/thanhminh/vn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/"
+                href="https://redaim32.github.io/thanhminh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vn"
-                href="http://www.example.com/vn/tags/"
+                href="https://redaim32.github.io/thanhminh/vn/tags/"
                 />
   </url><url>
-    <loc>http://www.example.com/vn/</loc>
+    <loc>https://redaim32.github.io/thanhminh/vn/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/"
+                href="https://redaim32.github.io/thanhminh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vn"
-                href="http://www.example.com/vn/"
+                href="https://redaim32.github.io/thanhminh/vn/"
                 />
   </url>
 </urlset>
